@@ -1,0 +1,38 @@
+a.
+
+touch 19201079_1.txt 19201079_2.txt 19201079_3.txt 19201079_4.txt 
+mkdir Muhibur1
+mkdir Muhibur2
+mv 19201079_1.txt Muhibur1
+mv 19201079_2.txt Muhibur1
+mv 19201079_3.txt Muhibur1
+cp ./Muhibur1/19201079_1.txt ./Muhibur2
+cp ./Muhibur1/19201079_2.txt ./Muhibur2
+mkdir Muhibur3
+cp -r ./Muhibur1 ./Muhibur3
+cd Muhibur3
+cd Muhibur1
+ls * -l
+chmod go=rx 19201079_1.txt 19201079_2.txt 19201079_3.txt
+ls * -l
+cd ..
+ls -ld Muhibur1
+chmod go=rx Muhibur1
+ls -ld Muhibur1
+mv ./Number1/Muhibur3 ./Desktop
+rm -r Muhibur1 Muhibur2 19201079_4.txt
+
+b.
+
+cat > Course.txt
+grep -c CSE ./Course.txt
+
+c.
+
+cd /
+ls -a
+ 
+d.
+
+cat > show.txt
+sed -n ‘5,17p’ show.txt
