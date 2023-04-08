@@ -28,10 +28,17 @@ void* avg(void* arg)
 
 void* cou(void* arg)
 {
-	int *index = arg;
-	int x = sizeof(index);
-	sleep(1);
-	printf("Count: %d\n", x);
+    int *index = arg;
+    int x = 0;
+    int sentinel = -1;
+
+    while (index[x] != NULL)
+    {
+        x++;
+    }
+
+    sleep(1);
+    printf("Count: %d\n", x);
 }
 
 int main()
